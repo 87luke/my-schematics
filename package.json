@@ -1,0 +1,26 @@
+{
+    "name": "my-schematics",
+    "version": "0.2.1",
+    "description": "Enterprise Applications schematics",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "start": "npm run build && schematics .:rm --name=test --config=example_config.json"
+    },
+    "keywords": [
+        "schematics"
+    ],
+    "author": "Paolo Galfione",
+    "contributors": [
+        "Daniele Morosinotto (d.morosinotto@icloud.com)"
+    ],
+    "license": "MIT",
+    "schematics": "./src/collection.json",
+    "dependencies": {
+        "@angular-devkit/core": "^0.6.8",
+        "@angular-devkit/schematics": "^0.6.8",
+        "@types/node": "^8.0.31",
+        "js-yaml": "^3.12.0",
+        "typescript": "^2.9.2",
+        "fs": "^0.0.1-security"
+    }
+}

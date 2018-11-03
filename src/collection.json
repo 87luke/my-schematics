@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "redux-module": {
+      "aliases": [ "rm" ],
+      "factory": "./redux-module",
+      "description": "Genera un modulo redux ",
+      "schema": "./redux-module/schema.json"
+    }
+  }
+}
